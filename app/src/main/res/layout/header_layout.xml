@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp">
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_view_company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="start"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPC World Express"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center|end"/>
+
+        <TextView
+            android:id="@+id/text_view_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F Haque Tower, Level 6, 107 Bir Uttam CR Dutta Road, Dhaka 1205"
+            android:gravity="center|end"/>
+
+        <TextView
+            android:id="@+id/text_view_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01783704060"
+            android:gravity="center|end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
